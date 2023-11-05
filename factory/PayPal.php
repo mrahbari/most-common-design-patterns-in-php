@@ -6,13 +6,13 @@ class PayPal implements PaymentInterface
     private string $email;
     private string $password;
 
-    public function __construct($email, $password)
+    public function __construct(string $email, string $password)
     {
         $this->email = $email;
         $this->password = $password;
     }
 
-    public function charge($amount)
+    public function charge(float $amount)
     {
         printf(" \n\r ");
         printf(" \n\r Here you go : The paypal");
