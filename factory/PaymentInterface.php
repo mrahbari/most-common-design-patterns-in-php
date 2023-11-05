@@ -1,4 +1,4 @@
 <?php
 interface PaymentInterface {
-    public function charge($amount);
+    public function charge(float $amount);
 }
