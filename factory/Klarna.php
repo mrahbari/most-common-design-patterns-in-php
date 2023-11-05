@@ -8,14 +8,14 @@ class Klarna implements PaymentInterface
     private string $expirationDate;
     private string $cvv;
 
-    public function __construct($cardNumber, $expirationDate, $cvv)
+    public function __construct(string $cardNumber, string $expirationDate, string $cvv)
     {
         $this->cardNumber = $cardNumber;
         $this->expirationDate = $expirationDate;
         $this->cvv = $cvv;
     }
 
-    public function charge($amount)
+    public function charge(float $amount)
     {
         printf(" \n\r ");
         printf(" \n\r Here you go : The credit card");
