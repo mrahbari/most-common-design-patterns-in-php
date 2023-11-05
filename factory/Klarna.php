@@ -2,7 +2,7 @@
 
 include_once "./PaymentInterface.php";
 
-class CreditCard implements PaymentInterface
+class Klarna implements PaymentInterface
 {
     private string $cardNumber;
     private string $expirationDate;
