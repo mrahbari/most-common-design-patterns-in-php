@@ -1,4 +1,14 @@
 <?php
+/**
+The PHP code demonstrates the Adapter design pattern to facilitate communication between an existing `Telegram` class 
+and a system requiring a generic `MessageSender` interface. The `TelegramAdapter` class acts as a bridge, allowing 
+the `Telegram` class to seamlessly integrate with components expecting the `MessageSender` interface. 
+
+This promotes flexibility and code reusability by adapting the methods of the `Telegram` class to align with the expected 
+interface, enabling consistent usage across the system. The example usage at the end showcases how the adapter is employed 
+to send a message using the adapted `Telegram` class.
+**/
+
 // Existing class that needs to be adapted
 class Telegram {
 
