@@ -2,7 +2,7 @@
 include_once "./PaymentInterface.php";
 include_once "./PaymentDecorator.php";
 
-class CreditCardDecorator extends PaymentDecorator {
+class KlarnaDecorator extends PaymentDecorator {
     private string $creditCardNumber;
     private string $expirationDate;
     private string $cvv;
