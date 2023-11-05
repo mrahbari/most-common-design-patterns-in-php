@@ -24,7 +24,10 @@ require_once 'PaymentWrapper.php';
 try {
     $paypal = new PayPal();
     $paypalAdapter = new PayPalAdapter($paypal);
-    //$paypalAdapter->pay(100);
+    $paypalAdapter->pay(100);
+
+    //OR
+    //More advanced usage with wrapper
     $wrapper = new PaymentWrapper($paypalAdapter);
     $wrapper->doPayment(100);
 } catch (Exception $e) {
