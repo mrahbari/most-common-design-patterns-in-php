@@ -6,7 +6,7 @@ class PaymentFactory {
     /**
      * @throws Exception
      */
-    public static function create($type, $params) {
+    public static function create(string $type, array $params) {
         switch($type) {
             case 'credit-card':
                 return new CreditCard($params['cardNumber'], $params['expirationDate'], $params['cvv']);
